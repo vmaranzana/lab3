@@ -9,6 +9,7 @@ Familiarizarse con las vistas en rails.
 - Si la DB está con datos no deseados pueden resetearla con `rails db:reset`
 - La aplicación ya tiene bootstrap instalado
 - Correr la aplicación con `rails server` para ver los cambios mientras trabajan
+- Correr el compilador de SCSS con `yarn build:css --watch` en otra terminal para poder ver los cambios de estilos
 
 ## Pasos previos
 
