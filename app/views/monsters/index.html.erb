@@ -1,1 +1,12 @@
-<%# Update me %><%= @monsters.inspect %>
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1> Lista monstruos </h1>
+
+    <% @monsters.each do |m| %> 
+        <li> Nombre: <%= m.name %> </li>
+    <% end %>
+
+</body>
+</html>
