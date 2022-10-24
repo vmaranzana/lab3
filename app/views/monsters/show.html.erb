@@ -3,6 +3,30 @@
 
 <body>
     <h1> <%= @monster.name %> </h1>
-    <p> <%= @monster.description %> </p>
+
+    <table>
+        <tr>
+            <th>
+                Informacion
+            </th>
+            <th>
+                Listado Tweets
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p> <%= @monster.description %> </p>
+                <button type="button" class="btn btn-danger"> Eliminar </button>
+            </td>
+            <td>
+
+                <% @monster.tweets.each do |t| %>
+                    <li> <%= t.content %> </li>
+                <% end %>
+
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
